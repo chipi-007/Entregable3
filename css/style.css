@@ -9,7 +9,6 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  /* Usamos grid con 1 columna y 2 filas */
   background-color: #690201;
   justify-items: center;
   padding-top: 30px;
@@ -30,8 +29,8 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Espaciado entre los enlaces */
-  padding: 10px 0; /* Padding para darle espacio alrededor */
+  gap: 20px;
+  padding: 10px 0;
 }
 
 /* Estilo para los enlaces del navbar */
@@ -41,11 +40,6 @@ header nav a {
   font-size: 1rem;
   padding: 5px 10px;
   transition: color 0.3s ease;
-}
-
-/* Efecto hover para los enlaces */
-header nav a:hover {
-  color: #f3d83c; /* Cambiar color al pasar el mouse */
 }
 
 main {
@@ -99,6 +93,7 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: auto;
   gap: 20px;
+  justify-items: center;
 }
 
 .card, .card-magia {
@@ -129,6 +124,19 @@ footer {
   color: #666;
 }
 
+@media (min-width: 1024px) {
+  .armamento-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+}
 .equipamiento-lista {
   list-style: none;
   padding: 0;

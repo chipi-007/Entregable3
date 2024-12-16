@@ -3,7 +3,7 @@
 
 /* Estilos del header */
 header {
-    @include mixins.grid(1fr, 1fr 1fr); /* Usamos grid con 1 columna y 2 filas */
+    @include mixins.grid(1fr, 1fr 1fr); 
     background-color: variables.$color-principal;
     justify-items: center;
     padding-top: 30px;
@@ -24,8 +24,8 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Espaciado entre los enlaces */
-    padding: 10px 0; /* Padding para darle espacio alrededor */
+    gap: 20px; 
+    padding: 10px 0; 
 }
 
 /* Estilo para los enlaces del navbar */
@@ -35,9 +35,4 @@ header nav a {
     font-size: 1rem;
     padding: 5px 10px;
     transition: color 0.3s ease;
-}
-
-/* Efecto hover para los enlaces */
-header nav a:hover {
-    color: variables.$color-secundario; /* Cambiar color al pasar el mouse */
 }
