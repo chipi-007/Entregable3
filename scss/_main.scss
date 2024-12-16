@@ -1,0 +1,22 @@
+@use 'variables';
+@use 'mixins';
+
+main {
+    @include mixins.grid(1fr);
+    padding: 15px;
+    background-color: variables.$color-fondo;
+    color: whitesmoke;
+}
+
+main div img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.titulo {
+    grid-row: 1;
+    text-align: center;
+    font-size: variables.$tamano-fuente-mediana;
+    color: #fff;
+    margin-bottom: 20px;
+}

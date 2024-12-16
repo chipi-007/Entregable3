@@ -1,0 +1,19 @@
+@use 'variables';
+@use 'mixins';
+
+header {
+    @include mixins.grid(3fr 1fr);
+    background-color: variables.$color-principal;
+    justify-content: center;
+    align-items: center;
+    // padding-top: 60px;
+}
+
+header h1 {
+    font-family: variables.$familia-fuente-principal;
+    font-size: variables.$tamano-fuente-grande;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    color: variables.$color-texto-principal;
+}

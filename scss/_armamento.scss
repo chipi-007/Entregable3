@@ -1,0 +1,51 @@
+@use 'variables';
+@use 'mixins';
+
+.armamento-grid {
+    @include mixins.grid(1fr);
+    gap: 20px;
+    grid-template-rows: auto 1fr;
+    padding: 0 20px;
+}
+
+.titulo {
+    grid-row: 1;
+    text-align: center;
+    font-size: variables.$tamano-fuente-mediana;
+    color: variables.$color-secundario;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    grid-row: 2;
+    @include mixins.grid(repeat(auto-fill, minmax(250px, 1fr)));
+    gap: 20px;
+}
+
+.card, .card-magia {
+    background-color: variables.$color-fondo-secundario;
+    border: 1px solid #ddd;
+    border-radius: variables.$radio-borde;
+    padding: 15px;
+    box-shadow: variables.$sombra-caja;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: variables.$radio-borde;
+    margin-bottom: 15px;
+}
+
+.card, .card-magia h3 {
+    font-size: 1.5rem;
+    color: variables.$color-texto-secundario;
+    margin-bottom: 10px;
+}
+
+.card, .card-magia p {
+    font-size: 1rem;
+    color: variables.$color-texto-terciario;
+}

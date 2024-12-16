@@ -1,0 +1,8 @@
+@use 'variables';
+
+.card-magia img {
+    width: 50%;
+    height: auto;
+    border-radius: variables.$radio-borde;
+    margin-bottom: 15px;
+}

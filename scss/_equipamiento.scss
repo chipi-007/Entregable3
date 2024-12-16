@@ -1,0 +1,39 @@
+@use 'variables';
+@use 'mixins';
+
+.equipamiento-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.equipamiento-lista li {
+    @include mixins.flexbox(row, flex-start, space-between);
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: variables.$radio-borde;
+    margin-bottom: 15px;
+    background-color: variables.$color-fondo-secundario;
+}
+
+.equipamiento-lista img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.equipamiento-lista h3 {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.equipamiento-lista p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+}

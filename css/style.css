@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  background-color: #690201;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  text-decoration: underline;
+  color: antiquewhite;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding: 15px;
+  background-color: black;
+  color: whitesmoke;
+}
+
+main div img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.titulo {
+  grid-row: 1;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 10px;
+  background-color: #690201;
+  color: black;
+}
+
+.armamento-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  grid-template-rows: auto 1fr;
+  padding: 0 20px;
+}
+
+.titulo {
+  grid-row: 1;
+  text-align: center;
+  font-size: 2rem;
+  color: #f3d83c;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.card, .card-magia {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card, .card-magia h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card, .card-magia p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.equipamiento-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.equipamiento-lista li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+
+.equipamiento-lista img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.equipamiento-lista h3 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.equipamiento-lista p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.item-profesion {
+  list-style: none;
+}
+
+.card-magia img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
