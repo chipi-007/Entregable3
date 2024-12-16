@@ -1,17 +1,21 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Estilos del header */
 header {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* Usamos grid con 1 columna y 2 filas */
   background-color: #690201;
-  justify-content: center;
-  align-items: center;
+  justify-items: center;
+  padding-top: 30px;
 }
 
+/* Estilos del título en el header */
 header h1 {
   font-family: "Cormorant Garamond", serif;
   font-size: 50px;
@@ -19,6 +23,29 @@ header h1 {
   text-align: center;
   text-decoration: underline;
   color: antiquewhite;
+}
+
+/* Estilos de la barra de navegación */
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaciado entre los enlaces */
+  padding: 10px 0; /* Padding para darle espacio alrededor */
+}
+
+/* Estilo para los enlaces del navbar */
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover para los enlaces */
+header nav a:hover {
+  color: #f3d83c; /* Cambiar color al pasar el mouse */
 }
 
 main {
@@ -112,9 +139,9 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
-  gap: 15px;
-  padding: 15px;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
   border: 1px solid #ddd;
   border-radius: 8px;
   margin-bottom: 15px;
